@@ -123,6 +123,6 @@ Suite *test_memmove(void) {
   tcase_add_test(tc, memmove_11);
   tcase_add_test(tc, memmove_12);
   tcase_add_test(tc, memmove_13);
-  
+
   return s;
 }

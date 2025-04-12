@@ -59,7 +59,7 @@ END_TEST
 START_TEST(memcpy_8) {
   char str[] = "\0";
   char str1[] = "\0";
-  s21_size_t len = 1;  
+  s21_size_t len = 1;
   ck_assert_mem_eq(memcpy(str, str1, len), s21_memcpy(str, str1, len), len);
 }
 END_TEST
@@ -83,7 +83,7 @@ END_TEST
 START_TEST(memcpy_11) {
   char str[] = "Hello, world!";
   char str1[] = "Hello, world!";
-  s21_size_t len = strlen(str1);  
+  s21_size_t len = strlen(str1);
   ck_assert_mem_eq(memcpy(str, str1, len), s21_memcpy(str, str1, len), len);
 }
 END_TEST
@@ -112,7 +112,7 @@ Suite *test_memcpy(void) {
   tcase_add_test(tc, memcpy_10);
   tcase_add_test(tc, memcpy_11);
   tcase_add_test(tc, memcpy_12);
-  
+
   suite_add_tcase(s, tc);
   return s;
 }
